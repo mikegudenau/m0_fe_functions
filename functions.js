@@ -40,6 +40,18 @@ console.log(nameString2);
 
 // 4: Write a function named square that takes in one number, and returns the square of that number.
 // BONUS: Print a sentence that interpolates the return value of your square function.
+function square(number) {
+    var sqrt = Math.sqrt((number));
+    return sqrt;
+}
+
+var sqrt1 = square(100);
+var sqrt2 = square(49);
+
+
+console.log(`The square root of 100 is ${sqrt1}.`);
+console.log(`The square root of 49 is ${sqrt2}.`);
+
 
 // 5: Write a function named checkStock that satisfies the following interaction pattern:
 // Hint: You will only write one checkStock function that checks the quantity and then prints the corresponding statement.
