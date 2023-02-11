@@ -56,14 +56,24 @@ console.log(`The square root of 49 is ${sqrt2}.`);
 // 5: Write a function named checkStock that satisfies the following interaction pattern:
 // Hint: You will only write one checkStock function that checks the quantity and then prints the corresponding statement.
 
-// checkStock(4, "Coffee");
+function checkStock(num, item) {
+    if (num >= 4) {
+        console.log(`${item} is stocked`);
+    } else if (num === 0) {
+        console.log(`${item} - OUT of stock!`);
+    } else {
+        console.log(`${item} - running LOW`);
+    }
+}
+
+checkStock(4, "Coffee");
 // // => "Coffee is stocked"
 
-// checkStock(3, "Tortillas");
+checkStock(3, "Tortillas");
 // // => "Tortillas - running LOW"
 
-// checkStock(0, "Cheese");
+checkStock(0, "Cheese");
 // // => "Cheese - OUT of stock!"
 
-// checkStock(1, "Salsa");
+checkStock(1, "Salsa");
 // // => "Salsa - running LOW"
